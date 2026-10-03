@@ -1,0 +1,13 @@
+{
+  "name": "zenplay-mock-m3u",
+  "private": true,
+  "description": "A local fake M3U playlist and XMLTV guide with invented content, for demos and store screenshots.",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "start": "node server.mjs",
+    "make-video": "cd ../xtream-playlist && npm run make-video"
+  }
+}
