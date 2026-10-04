@@ -12,6 +12,8 @@ is invented and seeded, so every run serves exactly the same playlist.
 ## Run
 
 ```sh
+pnpm mock:m3u               # from the repo root (pnpm mock runs it with the Xtream mock)
+# or
 cd m3u-playlist && npm start
 ```
 

@@ -12,9 +12,9 @@ serves exactly the same content and screenshots can be retaken identically.
 ## Run
 
 ```sh
-pnpm mock:xtream            # from the repo root
+pnpm mock:xtream            # from the repo root (pnpm mock runs it with the M3U mock)
 # or
-cd mock-xtream && npm start
+cd xtream-playlist && npm start
 ```
 
 No dependencies — Node 20+ only. It prints the server URL (and the one to use
@@ -53,7 +53,7 @@ mountains, rendered on your Mac (no footage, text or logos). Render it once
 before starting the server:
 
 ```sh
-cd mock-xtream && npm run make-video     # ~1–2 minutes; needs the Xcode command line tools (swift)
+pnpm make-video     # from the repo root (or: cd xtream-playlist && npm run make-video) — ~1–2 minutes; needs the Xcode command line tools (swift)
 ```
 
 It writes `media/` (git-ignored, ~65 MB):

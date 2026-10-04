@@ -1,0 +1,16 @@
+{
+  "name": "zenplay-mock-server",
+  "private": true,
+  "description": "Local fake IPTV sources for ZenPlay: an Xtream Codes panel and an M3U playlist with XMLTV guide.",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "start": "node run.mjs xtream m3u",
+    "mock": "node run.mjs xtream m3u",
+    "mock:xtream": "node run.mjs xtream",
+    "mock:m3u": "node run.mjs m3u",
+    "make-video": "cd xtream-playlist && swift make-video.swift"
+  }
+}
